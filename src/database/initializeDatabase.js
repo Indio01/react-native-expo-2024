@@ -10,7 +10,7 @@ export async function initializeDatabase(database) {
                 senha TEXT NOT NULL DEFAULT 'A123456a!',
                 role TEXT NOT NULL DEFAULT 'USER',
                 created_at DATE DEFAULT CURRENT_TIMESTAMP,
-                update_at DATE,
+                update_at DATE
             );
 
             INSERT OR REPLACE INTO users (nome, email, senha, role) VALUES ('Super', 'super@gmail.com', 'A123456a!', 'SUPER');

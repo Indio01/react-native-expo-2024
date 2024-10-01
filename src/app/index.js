@@ -8,9 +8,9 @@ export default function App() {
 
   const handleEntrarSuper = async () => {
     try {
-      await signIn({ email: "super@gmail.com", password: "Super123!" });
+      await signIn({ email: "super@gmail.com", password: "A123456a!" });
     } catch (error) {
-      console.log(e);
+      console.log(error);
     }
   };
 
@@ -20,12 +20,12 @@ export default function App() {
       <Button title="Signin Super" onPress={handleEntrarSuper} />
       <Button
         title="Signin Adm"
-        onPress={() => signIn({ email: "adm@gmail.com", password: "Adm123!" })}
+        onPress={() => signIn({ email: "admin@gmail.com", password: "A123456a!" })}
       />
       <Button
         title="Signin User"
         onPress={() =>
-          signIn({ email: "user@gmail.com", password: "User123!" })
+          signIn({ email: "user@gmail.com", password: "A123456a!" })
         }
       />
       <Button title="Sobre" onPress={() => router.push("/about")} />
